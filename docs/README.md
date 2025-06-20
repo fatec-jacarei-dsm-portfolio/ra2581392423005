@@ -6,6 +6,6 @@
 ### Turma: 2o. Semestre de 2024
 
 **Portfólio Online**  
-[🔗 Acesse o Portfólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423005/)  
+[🔗 Acesse o Portfólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423005/index.html)  
 
 [🎤 Pitch de Apresentação (vídeo)]
