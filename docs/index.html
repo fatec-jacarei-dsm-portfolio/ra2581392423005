@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>Portfólio - Gustavo Hammes</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
   <header>
     <h1>Gustavo Hammes</h1>
@@ -22,58 +25,123 @@
 
   <section id="sobre">
     <h2>Sobre Mim</h2>
-    <p>
-      Sou estudante de Desenvolvimento de Software Multiplataforma na Fatec Jacareí e técnico em Informática pelo Colégio Etep.
-      Tenho experiência com Python, TypeScript, React, Node.js, C++, bancos de dados como MySQL, e projetos práticos envolvendo OpenCV e Arduino.
-      Busco constantemente evoluir minhas habilidades técnicas e colaborar em projetos inovadores.
-    </p>
+    <div class="sobre-container">
+      <img src="./img/IMG_7225[2].JPG" alt="Foto de Gustavo Hammes" class="sobre-foto">
+      <p>
+        Olá! Sou Gustavo Hammes, um desenvolvedor Full Stack apaixonado por tecnologia e inovação.
+        Tenho 20 anos e atualmente estou cursando Desenvolvimento de Software Multiplataforma na Fatec Jacareí, sou
+        técnico em Informática pelo Colégio Etep.
+        Minha jornada na programação começou cedo, aos 14 anos, e desde então tenho me dedicado a aprimorar minhas
+        habilidades em diversas linguagens e tecnologias.
+        Tenho experiência com Python, TypeScript, React, Node.js, C++, bancos de dados como MySQL, e projetos práticos
+        envolvendo OpenCV e Arduino.
+        Busco constantemente evoluir minhas habilidades técnicas e colaborar em projetos inovadores.
+      </p>
+    </div>
   </section>
 
   <section id="projetos">
     <h2>Projetos</h2>
-
-    <div class="projeto">
-      <!-- <img src="https://raw.githubusercontent.com/fatec-jacarei-dsm-portfolio/ra2581392423015/main/docs/laser-cat-tracker.png" alt="Laser Cat Tracker" class="projeto-img"> -->
-      <h3>Laser Cat Tracker</h3>
-      <p>Projeto em Python com OpenCV e Arduino para rastrear gatos e mover um laser automaticamente com base em reconhecimento facial.</p>
-      <a href="https://github.com/SamuelLucasVieira/laser-cat-tracker" target="_blank">Ver no GitHub</a>
-    </div>
-
-    <div class="projeto">
-      <!-- <img src="https://raw.githubusercontent.com/fatec-jacarei-dsm-portfolio/ra2581392423015/main/docs/dashboard-solar.png" alt="Dashboard Solar" class="projeto-img"> -->
-      <h3>Dashboard Solar Interativo</h3>
-      <p>Visualização de dados ambientais com React, TypeScript, Leaflet e GeoTIFF, com filtros por estado, bioma e datas.</p>
-      <a href="https://github.com/octacodeteam/ABP2" target="_blank">Repositório Geral</a>
-    </div>
-
-    <div class="projeto">
-      <!-- <img src="https://raw.githubusercontent.com/fatec-jacarei-dsm-portfolio/ra2581392423015/main/docs/financias.png" alt="Financias" class="projeto-img"> -->
-      <h3>Financias</h3>
-      <p>Aplicação web para simular empréstimos e investimentos com cálculo de juros simples e compostos. Desenvolvido em grupo com TypeScript, banco de dados e geração de relatórios.</p>
-      <a href="https://github.com/GustavoHammes/Financias" target="_blank">Ver no GitHub</a>
-    </div>
-
-    <div class="projeto">
-      <!-- <img src="https://raw.githubusercontent.com/fatec-jacarei-dsm-portfolio/ra2581392423015/main/docs/dsw2.png" alt="Projetos DSW2" class="projeto-img"> -->
-      <h3>Projetos DSW2</h3>
-        <p>Conjunto de projetos desenvolvidos na disciplina de Desenvolvimento de Software Web 2, incluindo aplicações modernas em HTML, CSS, JS e integração com backend e monitoramento de áreas usando Geojson e Leaflet.</p>
+    <div class="projetos-container">
+      <div class="projeto" onclick="openModal('modal-cat-laser')">
+        <img src="./img/cat_laser.png" alt="Laser Cat Tracker" class="projeto-img">
+        <h3>Laser Cat Tracker</h3>
+        <p>Projeto em Python com OpenCV e Arduino para rastrear gatos e mover um laser automaticamente com base em
+          reconhecimento facial.</p>
+        <a href="https://github.com/SamuelLucasVieira/laser-cat-tracker" target="_blank">Ver no GitHub</a>
+      </div>
+      <div class="projeto" onclick="openModal('modal-abp2')">
+        <img src="img/abp2.png" alt="Dashboard Solar" class="projeto-img">
+        <h3>Dashboard Solar Interativo</h3>
+        <p>Visualização de dados ambientais com React, TypeScript, Leaflet e GeoTIFF, com filtros por estado, bioma e
+          datas.</p>
+        <a href="https://github.com/octacodeteam/ABP2" target="_blank">Repositório Geral</a>
+      </div>
+      <div class="projeto" onclick="openModal('modal-financias')">
+        <img src="img/investimento.png" alt="Financias" class="projeto-img">
+        <h3>Financias</h3>
+        <p>Aplicação web para simular empréstimos e investimentos com cálculo de juros simples e compostos. Desenvolvido
+          em grupo com TypeScript, banco de dados e geração de relatórios.</p>
+        <a href="https://github.com/GustavoHammes/Financias" target="_blank">Ver no GitHub</a>
+      </div>
+      <div class="projeto" onclick="openModal('modal-dsw2')">
+        <img src="img/image.png" alt="Projetos DSW2" class="projeto-img">
+        <h3>Projetos DSW2</h3>
+        <p>Conjunto de projetos desenvolvidos na disciplina de Desenvolvimento de Software Web 2, incluindo aplicações
+          modernas em HTML, CSS, JS e integração com backend e monitoramento de áreas usando Geojson e Leaflet.</p>
         <a href="https://github.com/GustavoHammes/DW2" target="_blank">Ver no GitHub</a>
+      </div>
+      <div class="projeto" onclick="openModal('modal-abp1')">
+        <img src="img/abp1.png" alt="ABP1 Scrum" class="projeto-img">
+        <h3>Jornada Scrum</h3>
+        <p>Projeto desenvolvido em equipe para apresentar os conceitos, fundamentos e papéis do framework ágil Scrum de
+          forma didática e interativa.</p>
+        <a href="https://github.com/octacodeteam/ABP1" target="_blank">Ver no GitHub</a>
+      </div>
     </div>
 
-    <div class="projeto">
-      <!-- <img src="https://raw.githubusercontent.com/fatec-jacarei-dsm-portfolio/ra2581392423015/main/docs/scrum-abp1.png" alt="ABP1 Scrum" class="projeto-img"> -->
-      <h3>ABP1 - Site sobre Scrum</h3>
-      <p>Projeto desenvolvido em equipe para apresentar os conceitos, fundamentos e papéis do framework ágil Scrum de forma didática e interativa.</p>
-      <a href="https://github.com/octacodeteam/ABP1" target="_blank">Ver no GitHub</a>
+    <!-- Modais -->
+    <div id="modal-cat-laser" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-cat-laser')">&times;</span>
+        <img src="./img/cat_laser.png" class="modal-img" alt="Laser Cat Tracker">
+        <h3>Laser Cat Tracker</h3>
+        <p>Projeto em Python com OpenCV e Arduino para rastrear gatos e mover um laser automaticamente com base em
+          reconhecimento facial.</p>
+        <a href="https://github.com/SamuelLucasVieira/laser-cat-tracker" target="_blank">Ver no GitHub</a>
+      </div>
+    </div>
+    <div id="modal-abp2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-abp2')">&times;</span>
+        <img src="img/abp2.png" class="modal-img" alt="Dashboard Solar">
+        <h3>Dashboard Solar Interativo</h3>
+        <p>Visualização de dados ambientais com React, TypeScript, Leaflet e GeoTIFF, com filtros por estado, bioma e
+          datas.</p>
+        <a href="https://github.com/octacodeteam/ABP2" target="_blank">Repositório Geral</a>
+      </div>
+    </div>
+    <div id="modal-financias" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-financias')">&times;</span>
+        <img src="img/investimento.png" class="modal-img" alt="Financias">
+        <h3>Financias</h3>
+        <p>Aplicação web para simular empréstimos e investimentos com cálculo de juros simples e compostos. Desenvolvido
+          em grupo com TypeScript, banco de dados e geração de relatórios.</p>
+        <a href="https://github.com/GustavoHammes/Financias" target="_blank">Ver no GitHub</a>
+      </div>
+    </div>
+    <div id="modal-dsw2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-dsw2')">&times;</span>
+        <img src="img/image.png" class="modal-img" alt="Projetos DSW2">
+        <h3>Projetos DSW2</h3>
+        <p>Conjunto de projetos desenvolvidos na disciplina de Desenvolvimento de Software Web 2, incluindo aplicações
+          modernas em HTML, CSS, JS e integração com backend e monitoramento de áreas usando Geojson e Leaflet.</p>
+        <a href="https://github.com/GustavoHammes/DW2" target="_blank">Ver no GitHub</a>
+      </div>
+    </div>
+    <div id="modal-abp1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-abp1')">&times;</span>
+        <img src="img/abp1.png" class="modal-img" alt="ABP1 Scrum">
+        <h3>Jornada Scrum</h3>
+        <p>Projeto desenvolvido em equipe para apresentar os conceitos, fundamentos e papéis do framework ágil Scrum de
+          forma didática e interativa.</p>
+        <a href="https://github.com/octacodeteam/ABP1" target="_blank">Ver no GitHub</a>
+      </div>
     </div>
   </section>
 
   <section id="contato">
     <h2>Contato</h2>
     <ul>
-      <li>Email: <a href="mailto:daffa1632@gmail.com">daffa1632@gmail.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/gustavohammes" target="_blank">gustavohammes</a></li>
-      <li>GitHub: <a href="https://github.com/GustavoHammes" target="_blank">GustavoHammes</a></li>
+      <li><i class="fas fa-envelope"></i>Email: <a href="mailto:daffa1632@gmail.com">daffa1632@gmail.com</a></li>
+      <li><i class="fab fa-linkedin"></i>LinkedIn: <a href="https://www.linkedin.com/in/gustavohammes"
+          target="_blank">gustavohammes</a></li>
+      <li><i class="fab fa-github"></i>GitHub: <a href="https://github.com/GustavoHammes"
+          target="_blank">GustavoHammes</a></li>
+      <li><i class="fas fa-phone"></i>Whatsapp: <a href="https://api.whatsapp.com/send/?phone=%2B5512996436444&text&type=phone_number&app_absent=0">+55 12 99643-6444</a></li>
     </ul>
   </section>
 
@@ -82,5 +150,7 @@
   </footer>
 
   <script src="./js/script.js"></script>
+
 </body>
+
 </html>

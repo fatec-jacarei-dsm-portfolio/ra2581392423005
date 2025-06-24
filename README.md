@@ -9,4 +9,4 @@ Portfólio de Projetos - Fatec Jacareí
 **Portfólio Online**  
 [🔗 Acesse o Portfólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423005/index.html)  
 
-[🎤 Pitch de Apresentação (vídeo)]
+[🎤 Pitch de Apresentação (vídeo)](https://youtu.be/mM2WpWq5TUo)
