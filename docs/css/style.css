@@ -61,12 +61,23 @@ section {
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 8px;
-  border-left: 5px solid #333;
   box-sizing: border-box;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Estilos para resetar o botão e adicionar interatividade */
+  border: none;
+  border-left: 5px solid #333;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projeto:hover, .projeto:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
 .projeto-img {
@@ -123,6 +134,10 @@ section {
   font-size: 2rem;
   color: #333;
   cursor: pointer;
+  /* Reset de estilos de botão */
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 footer {
