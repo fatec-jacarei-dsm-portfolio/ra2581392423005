@@ -1,12 +1,15 @@
-# ra2581392423005
-Repositório do aluno GUSTAVO HENRIQUE FERREIRA HAMMES.
+# Portfólio - Gustavo Henrique Ferreira Hammes
 
-Portfólio de Projetos - Fatec Jacareí
-### Aluno: Gustavo Henrique Ferreira Hammes
-### Curso: Desenvolvimento de Software Multiplataforma
-### Turma: 2o. Semestre de 2024
+Repositório do portfólio acadêmico desenvolvido para a Fatec Jacareí.
 
-**Portfólio Online**  
-[🔗 Acesse o Portfólio](https://portfolio-gustavo-hammes.vercel.app/)  
+## Acesse o Portfólio
 
-[🎤 Pitch de Apresentação (vídeo)](https://youtu.be/mM2WpWq5TUo)
+[Acesse o Portfólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423005/)
+
+## Pitch
+
+[Assista ao vídeo de apresentação](COLE_AQUI_O_LINK_DO_VIDEO)
+
+## Sobre
+
+Este portfólio apresenta meus projetos acadêmicos, profissionais e pessoais, com destaque para minha participação individual nas ABPs do 3º DSM e 4º DSM.
