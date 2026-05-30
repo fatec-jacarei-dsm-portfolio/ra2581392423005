@@ -92,7 +92,7 @@
       "title": "Bootcamp Creator IT – Low Code",
       "issuer": "Creator IT",
       "year": "2024",
-      "url": "/Certificado_lowcode.jpg"
+      "url": "/assets/Certificado_lowcode.jpg"
     },
     {
       "id": "4",
@@ -113,7 +113,7 @@
       "title": "NDG Linux Unhatched",
       "issuer": "Cisco",
       "year": "2023",
-      "url": "/Certificado_cisco.pdf"
+      "url": "/pdfs/Certificado_cisco.pdf"
     }
   ],
   "abpConfig": [
