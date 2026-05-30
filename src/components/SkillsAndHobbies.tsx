@@ -117,12 +117,7 @@ const pdfDocuments = [
 	{
 		title: "Currículo",
 		description: "Abrir meu currículo profissional em PDF.",
-		href: `${import.meta.env.BASE_URL}pdfs/curriculo-gustavo-hammes.pdf`,
-	},
-	{
-		title: "Certificados",
-		description: "Abrir arquivo com certificados e atividades complementares.",
-		href: `${import.meta.env.BASE_URL}pdfs/certificados-gustavo-hammes.pdf`,
+		href: `${import.meta.env.BASE_URL}pdfs/Currículo_Gustavo_Hammes.pdf`,
 	},
 ];
 

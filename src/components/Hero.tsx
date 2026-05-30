@@ -41,7 +41,7 @@ export function Hero() {
 		return () => clearTimeout(timeout);
 	}, [displayed, deleting, roleIndex]);
 
-	const profileImage = `${import.meta.env.BASE_URL}assets/images/profile.jpg`;
+	const profileImage = `${import.meta.env.BASE_URL}assets/images/Gustavo.jpg`;
 	const fallbackImage =
 		"https://ui-avatars.com/api/?name=Gustavo+Hammes&size=144&background=4f46e5&color=fff&bold=true";
 
