@@ -1,15 +1,19 @@
-# Portfólio - Gustavo Henrique Ferreira Hammes
+# Portfólio de Projetos - Fatec Jacareí
 
-Repositório do portfólio acadêmico desenvolvido para a Fatec Jacareí.
+**Aluno:** Gustavo Henrique Ferreira Hammes  
+**Curso:** Desenvolvimento de Software Multiplataforma  
+**Turma:** 2º Semestre de 2024
 
-## Acesse o Portfólio
+---
+
+**Portfólio Online**
 
 [Acesse o Portfólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423005/)
 
-## Pitch
+---
 
-[Assista ao vídeo de apresentação](COLE_AQUI_O_LINK_DO_VIDEO)
+**Vídeos de Apresentação**
 
-## Sobre
-
-Este portfólio apresenta meus projetos acadêmicos, profissionais e pessoais, com destaque para minha participação individual nas ABPs do 3º DSM e 4º DSM.
+2DSM - [Vídeo](COLE_AQUI_O_LINK_DO_VIDEO_2DSM)  
+4DSM - [Vídeo](COLE_AQUI_O_LINK_DO_VIDEO_4DSM)  
+6DSM - [Vídeo](COLE_AQUI_O_LINK_DO_VIDEO_6DSM)

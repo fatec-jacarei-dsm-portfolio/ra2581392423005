@@ -1,16 +1,506 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
+<!doctype html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-
-      <link rel="icon" type="image/svg+xml" href="/ra2581392423005/favicon.svg" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio acadêmico, profissional e pessoal de Gustavo Hammes, estudante de Desenvolvimento de Software Multiplataforma na Fatec Jacareí."
+    />
     <title>Portfólio - Gustavo Hammes</title>
-    <script type="module" crossorigin src="/ra2581392423005/assets/index-DM8iY7cE.js"></script>
-    <link rel="stylesheet" crossorigin href="/ra2581392423005/assets/index-BnNFDl8p.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-background text-foreground">
-    <div id="root"></div>
+  <body>
+    <header class="header" id="topo">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a class="logo" href="#inicio" aria-label="Voltar ao início">
+          <span class="logo-mark">GH</span>
+          <span>Gustavo Hammes</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#certificados">Certificados</a></li>
+          <li><a href="#conhecimentos">Conhecimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="inicio">
+        <div class="hero-glow"></div>
+        <div class="hero-content reveal">
+          <div class="profile-wrap">
+            <img
+              src="assets/images/profile.jpg"
+              onerror="this.src = 'assets/images/profile-placeholder.svg'"
+              alt="Foto de Gustavo Hammes"
+              class="profile-image"
+            />
+            <span class="status-dot" title="Disponível para projetos"></span>
+          </div>
+
+          <p class="eyebrow">Desenvolvimento de Software Multiplataforma</p>
+          <h1>Gustavo <span>Hammes</span></h1>
+          <p class="typing" aria-label="Área de atuação">
+            <span id="typing-text"></span><span class="cursor">|</span>
+          </p>
+          <p class="hero-description">
+            Estudante de Desenvolvimento de Software Multiplataforma na Fatec
+            Jacareí, com foco em React, TypeScript, Node.js, Python, automação,
+            dados e soluções web centradas no usuário.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projetos">Ver projetos</a>
+            <a class="btn secondary" href="#conhecimentos"
+              >Conhecimentos técnicos</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="sobre">
+        <div class="container two-columns">
+          <div class="reveal">
+            <p class="section-label">Apresentação</p>
+            <h2>Sobre mim</h2>
+            <p>
+              Tenho 21 anos, moro em Jacareí - SP e curso Desenvolvimento de
+              Software Multiplataforma. Minha trajetória combina formação
+              técnica, projetos acadêmicos práticos e experiência profissional
+              em áreas administrativas, atendimento, e-commerce e organização de
+              processos.
+            </p>
+            <p>
+              Busco evoluir como desenvolvedor, aplicando tecnologia para
+              resolver problemas reais, automatizar rotinas e construir
+              aplicações web, mobile e geoespaciais com qualidade.
+            </p>
+          </div>
+
+          <div class="about-card reveal">
+            <h3>Áreas de interesse</h3>
+            <ul class="check-list">
+              <li>Desenvolvimento web e mobile</li>
+              <li>Automação com Python</li>
+              <li>Back-end com Node.js</li>
+              <li>Banco de dados e APIs</li>
+              <li>IoT, visão computacional e dados geoespaciais</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projetos">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">Portfólio</p>
+            <h2>Projetos</h2>
+            <p>
+              Projetos organizados em acadêmicos, profissionais e pessoais, com
+              destaque para minha contribuição individual, tecnologias usadas e
+              semestre de desenvolvimento.
+            </p>
+          </div>
+
+          <div class="filters reveal" aria-label="Filtros de projetos">
+            <button class="filter-btn active" data-filter="todos">Todos</button>
+            <button class="filter-btn" data-filter="academico">
+              Acadêmicos
+            </button>
+            <button class="filter-btn" data-filter="profissional">
+              Profissionais
+            </button>
+            <button class="filter-btn" data-filter="pessoal">Pessoais</button>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal" data-category="academico">
+              <div class="project-topline">
+                <span>4DSM</span><span>Acadêmico</span>
+              </div>
+              <h3>ABP4 - MedCare</h3>
+              <p class="project-desc">
+                Dispenser automático de remédios com ESP32, MQTT, back-end e
+                interface para acompanhamento de doses.
+              </p>
+              <p>
+                <strong>Minha contribuição:</strong> participei da construção da
+                lógica do sistema, integração entre hardware, back-end e
+                front-end, testes com sensores, motor, LCD, buzzer e organização
+                das funcionalidades do cuidador e paciente.
+              </p>
+              <div class="tags">
+                <span>ESP32</span><span>MQTT</span><span>Node.js</span
+                ><span>React</span><span>PostgreSQL</span>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/octacodeteam/ABP4"
+                target="_blank"
+                rel="noreferrer"
+                >Ver repositório</a
+              >
+            </article>
+
+            <article class="project-card reveal" data-category="academico">
+              <div class="project-topline">
+                <span>3DSM</span><span>Acadêmico</span>
+              </div>
+              <h3>ABP3 - GeoInsight INPE</h3>
+              <p class="project-desc">
+                Aplicação web para análise de dados geoespaciais e séries
+                temporais de satélites Sentinel e Landsat.
+              </p>
+              <p>
+                <strong>Minha contribuição:</strong> atuei no desenvolvimento da
+                interface, integração com APIs STAC/WTSS, filtros, gráficos
+                comparativos e ajustes de visualização para apoio à agricultura
+                de precisão.
+              </p>
+              <div class="tags">
+                <span>TypeScript</span><span>Leaflet</span><span>Chart.js</span
+                ><span>Node.js</span><span>APIs INPE</span>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/octacodeteam/ABP3"
+                target="_blank"
+                rel="noreferrer"
+                >Ver repositório</a
+              >
+            </article>
+
+            <article class="project-card reveal" data-category="academico">
+              <div class="project-topline">
+                <span>2DSM</span><span>Acadêmico</span>
+              </div>
+              <h3>ABP2 - Dashboard de Queimadas</h3>
+              <p class="project-desc">
+                Mapa interativo para visualização de queimadas, filtros por
+                estado, bioma e período, com dados ambientais.
+              </p>
+              <p>
+                <strong>Minha contribuição:</strong> participei da criação de
+                telas, uso de mapas com Leaflet, organização dos filtros,
+                consumo de APIs e tratamento de dados geográficos.
+              </p>
+              <div class="tags">
+                <span>React</span><span>TypeScript</span><span>Leaflet</span
+                ><span>GeoJSON</span><span>GeoTIFF</span>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/octacodeteam/ABP2"
+                target="_blank"
+                rel="noreferrer"
+                >Ver repositório</a
+              >
+            </article>
+
+            <article class="project-card reveal" data-category="academico">
+              <div class="project-topline">
+                <span>1DSM</span><span>Acadêmico</span>
+              </div>
+              <h3>ABP1</h3>
+              <p class="project-desc">
+                Projeto integrador desenvolvido em equipe no início do curso de
+                DSM, aplicando conceitos de lógica, organização e
+                desenvolvimento de software.
+              </p>
+              <p>
+                <strong>Minha contribuição:</strong> colaborei na organização
+                das atividades, implementação de funcionalidades, testes e
+                documentação do projeto em equipe.
+              </p>
+              <div class="tags">
+                <span>Trabalho em equipe</span><span>Documentação</span
+                ><span>GitHub</span>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/octacodeteam/ABP1"
+                target="_blank"
+                rel="noreferrer"
+                >Ver repositório</a
+              >
+            </article>
+
+            <article class="project-card reveal" data-category="academico">
+              <div class="project-topline">
+                <span>Projeto Acadêmico</span><span>Mobile</span>
+              </div>
+              <h3>App Scholar</h3>
+              <p class="project-desc">
+                Aplicativo escolar com versão web e mobile, desenvolvido com
+                foco em gestão acadêmica e uso pelo celular via Expo Go.
+              </p>
+              <p>
+                <strong>Minha contribuição:</strong> desenvolvi telas, ajustes
+                de responsividade, integração de funcionalidades e documentação
+                para apresentação do projeto.
+              </p>
+              <div class="tags">
+                <span>React Native</span><span>Expo</span><span>TypeScript</span
+                ><span>Node.js</span>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/GustavoHammes/App_Scholar"
+                target="_blank"
+                rel="noreferrer"
+                >Ver repositório</a
+              >
+            </article>
+
+            <article class="project-card reveal" data-category="pessoal">
+              <div class="project-topline">
+                <span>2025</span><span>Pessoal</span>
+              </div>
+              <h3>Laser Cat Tracker</h3>
+              <p class="project-desc">
+                Sistema com Python, OpenCV e Arduino para reconhecimento de gato
+                e movimentação automática de laser.
+              </p>
+              <p>
+                <strong>Minha contribuição:</strong> desenvolvi a lógica de
+                rastreamento, testes com câmera, comunicação com Arduino e
+                ajustes de movimentação do laser.
+              </p>
+              <div class="tags">
+                <span>Python</span><span>OpenCV</span><span>Arduino</span
+                ><span>Visão Computacional</span>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/SamuelLucasVieira/laser-cat-tracker"
+                target="_blank"
+                rel="noreferrer"
+                >Ver repositório</a
+              >
+            </article>
+
+            <article class="project-card reveal" data-category="pessoal">
+              <div class="project-topline">
+                <span>2025</span><span>Pessoal</span>
+              </div>
+              <h3>NLW Agents</h3>
+              <p class="project-desc">
+                Projeto full-stack com interface web, server, IA e organização
+                moderna de código.
+              </p>
+              <p>
+                <strong>Minha contribuição:</strong> pratiquei arquitetura
+                full-stack, integração entre front-end e back-end e organização
+                de documentação técnica.
+              </p>
+              <div class="tags">
+                <span>React</span><span>Node.js</span><span>TypeScript</span
+                ><span>IA</span>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/GustavoHammes"
+                target="_blank"
+                rel="noreferrer"
+                >Ver GitHub</a
+              >
+            </article>
+
+            <article class="project-card reveal" data-category="profissional">
+              <div class="project-topline">
+                <span>Experiência</span><span>Profissional</span>
+              </div>
+              <h3>Rotinas administrativas e e-commerce</h3>
+              <p class="project-desc">
+                Atuação com vendas, gestão de e-commerce/Mercado Livre,
+                atendimento online, controle de estoque e apoio logístico.
+              </p>
+              <p>
+                <strong>Minha contribuição:</strong> apliquei organização de
+                processos, comunicação com clientes, controle de informações em
+                sistema e melhoria de rotinas operacionais.
+              </p>
+              <div class="tags">
+                <span>E-commerce</span><span>Atendimento</span
+                ><span>Controle de estoque</span><span>Processos</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section certificates" id="certificados">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">Documentos</p>
+            <h2>Currículo, certificados e formação</h2>
+            <p>Arquivos em PDF e principais certificações complementares.</p>
+          </div>
+
+          <div class="document-grid reveal">
+            <a
+              class="document-card"
+              href="pdfs/curriculo-gustavo-hammes.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="document-icon">PDF</span>
+              <h3>Currículo</h3>
+              <p>Abrir currículo profissional em PDF.</p>
+            </a>
+            <a
+              class="document-card"
+              href="pdfs/certificados-gustavo-hammes.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="document-icon">PDF</span>
+              <h3>Certificados</h3>
+              <p>Abrir arquivo de certificados e atividades complementares.</p>
+            </a>
+          </div>
+
+          <div class="cert-list reveal">
+            <span>NLW Agents - Rocketseat</span>
+            <span>Bootcamp Creator IT - Low Code</span>
+            <span>Front-end Alura/Gemini</span>
+            <span>NDG Linux Unhatched - Cisco</span>
+            <span>Sistema Representacional</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills" id="conhecimentos">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">Conhecimentos</p>
+            <h2>Conhecimentos técnicos & habilidades</h2>
+            <p>
+              Competências técnicas, ferramentas, idiomas e habilidades
+              interpessoais presentes na minha formação e experiência.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <h3>Linguagens</h3>
+              <p>
+                Python, TypeScript, JavaScript, C++/Arduino, HTML5, CSS3 e SQL.
+              </p>
+            </div>
+            <div class="skill-card reveal">
+              <h3>Front-end</h3>
+              <p>
+                React.js, Vite, Leaflet.js, Chart.js, consumo de APIs REST, DOM
+                e responsividade.
+              </p>
+            </div>
+            <div class="skill-card reveal">
+              <h3>Back-end</h3>
+              <p>
+                Node.js, Express.js, arquitetura MVC, Mongoose e integração com
+                APIs externas.
+              </p>
+            </div>
+            <div class="skill-card reveal">
+              <h3>Dados e automação</h3>
+              <p>
+                OpenCV, Selenium, PyAutoGUI, Pandas, Openpyxl, GeoJSON e
+                GeoTIFF.
+              </p>
+            </div>
+            <div class="skill-card reveal">
+              <h3>Banco de dados</h3>
+              <p>MongoDB, PostgreSQL e MySQL.</p>
+            </div>
+            <div class="skill-card reveal">
+              <h3>Ferramentas</h3>
+              <p>
+                Git, GitHub, VS Code, Figma, Postman, Scrum, Kanban e
+                versionamento de código.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-grid">
+            <div class="info-card reveal">
+              <h3>Idiomas</h3>
+              <ul>
+                <li>Inglês - Avançado</li>
+                <li>Espanhol - Intermediário</li>
+                <li>Alemão - Iniciante</li>
+              </ul>
+            </div>
+            <div class="info-card reveal">
+              <h3>Formação</h3>
+              <ul>
+                <li>
+                  Fatec Jacareí - Desenvolvimento de Software Multiplataforma
+                </li>
+                <li>Colégio ETEP - Ensino Médio com Técnico em Informática</li>
+              </ul>
+            </div>
+            <div class="info-card reveal">
+              <h3>Habilidades</h3>
+              <ul>
+                <li>Trabalho em equipe, colaboração e boa comunicação</li>
+                <li>Adaptabilidade, criatividade e aprendizagem contínua</li>
+                <li>Organização de processos e relacionamento interpessoal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contato">
+        <div class="container contact-box reveal">
+          <p class="section-label">Contato</p>
+          <h2>Vamos nos conectar?</h2>
+          <p>
+            Conforme orientação do portfólio, mantenho apenas redes
+            profissionais para contato.
+          </p>
+          <div class="contact-links">
+            <a
+              href="https://github.com/GustavoHammes"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub</a
+            >
+            <a
+              href="https://linkedin.com/in/gustavohammes"
+              target="_blank"
+              rel="noreferrer"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> Gustavo Hammes - Portfólio acadêmico Fatec
+        Jacareí.
+      </p>
+      <a href="#inicio">Voltar ao topo</a>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
