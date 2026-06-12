@@ -15,5 +15,5 @@
 **Vídeos de Apresentação**
 
 2DSM - [Vídeo](https://youtu.be/mM2WpWq5TUo)  
-4DSM - [Vídeo](COLE_AQUI_O_LINK_DO_VIDEO_4DSM)  
+4DSM - [Vídeo](https://youtu.be/A0WPIBxT3QI)  
 6DSM - [Vídeo](COLE_AQUI_O_LINK_DO_VIDEO_6DSM)
